@@ -31,9 +31,9 @@ import com.example.xyzreader.R;
 
 public class DrawInsetsFrameLayout extends FrameLayout {
     private Drawable mInsetBackground;
-    private Drawable mTopInsetBackground;
-    private Drawable mBottomInsetBackground;
-    private Drawable mSideInsetBackground;
+    // --Commented out by Inspection (8/26/18, 4:21 PM):private Drawable mTopInsetBackground;
+    // --Commented out by Inspection (8/26/18, 4:21 PM):private Drawable mBottomInsetBackground;
+    // --Commented out by Inspection (8/26/18, 4:21 PM):private Drawable mSideInsetBackground;
 
     private Rect mInsets;
     private Rect mTempRect = new Rect();
@@ -153,7 +153,7 @@ public class DrawInsetsFrameLayout extends FrameLayout {
         }
     }
 
-    public static interface OnInsetsCallback {
-        public void onInsetsChanged(Rect insets);
+    public interface OnInsetsCallback {
+        void onInsetsChanged(Rect insets);
     }
 }
