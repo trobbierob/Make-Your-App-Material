@@ -10,7 +10,6 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.graphics.Palette;
 import android.text.Html;
@@ -66,7 +65,7 @@ public class ArticleDetailFragment extends Fragment implements
     // Most time functions can only handle 1902 - 2037
     private GregorianCalendar START_OF_EPOCH = new GregorianCalendar(2,1,1);
 
-    private CoordinatorLayout mCoordinatorLayout;
+    //private CoordinatorLayout mCoordinatorLayout;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -118,8 +117,8 @@ public class ArticleDetailFragment extends Fragment implements
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
-        mCoordinatorLayout = (CoordinatorLayout)
-                mRootView.findViewById(R.id.coordinator_layout);
+        /*CoordinatorLayout mCoordinatorLayout = (CoordinatorLayout)
+                mRootView.findViewById(R.id.coordinator_layout);*/
         /*mCoordinatorLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
             @Override
             public void onInsetsChanged(Rect insets) {

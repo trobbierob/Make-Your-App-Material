@@ -15,7 +15,6 @@
  */
 package com.example.xyzreader.ui;
 
-import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
@@ -37,10 +36,10 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 
     private int mOrientation;
 
-    public DividerItemDecoration(Context context, Drawable divider, int orientation) {
+    /*public DividerItemDecoration(Context context, Drawable divider, int orientation) {
         mDivider = divider;
         setOrientation(orientation);
-    }
+    }*/
 
     public void setOrientation(int orientation) {
         if (orientation != HORIZONTAL_LIST && orientation != VERTICAL_LIST) {

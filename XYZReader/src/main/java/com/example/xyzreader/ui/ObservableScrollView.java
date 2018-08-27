@@ -34,7 +34,7 @@ public class ObservableScrollView extends ScrollView {
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
         if (mCallbacks != null) {
-            mCallbacks.onScrollChanged();
+            //mCallbacks.onScrollChanged();
         }
     }
 
@@ -44,7 +44,7 @@ public class ObservableScrollView extends ScrollView {
         int scrollY = getScrollY();
         // hack to call onScrollChanged on screen rotate
         if (scrollY > 0 && mCallbacks != null) {
-            mCallbacks.onScrollChanged();
+            //mCallbacks.onScrollChanged();
         }
     }
 
@@ -53,11 +53,11 @@ public class ObservableScrollView extends ScrollView {
         return super.computeVerticalScrollRange();
     }
 
-    public void setCallbacks(Callbacks listener) {
+    /*public void setCallbacks(Callbacks listener) {
         mCallbacks = listener;
-    }
+    }*/
 
     public interface Callbacks {
-        void onScrollChanged();
+        // --Commented out by Inspection (8/27/18, 9:48 AM):void onScrollChanged();
     }
 }
