@@ -138,7 +138,7 @@ public class ArticleDetailFragment extends Fragment implements
         });*/
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
-        mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
+        //mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
 
         mStatusBarColorDrawable = new ColorDrawable(0);
 
@@ -153,7 +153,7 @@ public class ArticleDetailFragment extends Fragment implements
         });
 
         bindViews();
-        updateStatusBar();
+        //updateStatusBar();
         return mRootView;
     }
 
@@ -246,7 +246,7 @@ public class ArticleDetailFragment extends Fragment implements
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
                                 mRootView.findViewById(R.id.meta_bar)
                                         .setBackgroundColor(mMutedColor);
-                                updateStatusBar();
+                                //updateStatusBar();
                             }
                         }
 
